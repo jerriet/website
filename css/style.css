@@ -38,9 +38,9 @@ a.button:hover{}
 header {margin-bottom: 15px; margin-top: 50px;}
 header .wrap-header{height: 250px; background:#141414;}
 
-header #logo { width:100%; position: absolute; top:40px; left: 20px;}
+header #logo { width:100%;position: absolute; top:40px; left: 20px;}
 
-header #search {position: absolute;top: 60px; right:20px; width: 218px;z-index: 15;}
+header #search {position: absolute;top: 20px; right:20px; width: 218px;z-index: 15;}
 header .button-search {	position: absolute;	right: 0px;	background: url('../images/button-search.png') center center no-repeat;	width: 28px; height: 35px;cursor: pointer;}
 header #search input{background: #FFF;	padding: 1px 33px 1px 5px;	width: 182px;	height: 32px;	border: 1px solid #CCCCCC;	-webkit-border-radius: 3px;	-moz-border-radius: 3px; -khtml-border-radius: 3px;	border-radius: 3px;}
 
