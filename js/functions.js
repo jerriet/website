@@ -1,5 +1,5 @@
 function myName() {
-    var name = prompt("Please enter your name", "");
+    var name = document.forms["myForm"]["name"].value
     if (name.length < 9){
     if (name != null) {
         document.getElementById("setname").innerHTML = " Welcome " + name;
@@ -7,7 +7,6 @@ function myName() {
         } 
     } else {
         alert("Username too long (max 8 characters)!");
-        myName();
     }
 }
 

@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/responsiveslides.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -39,6 +40,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/responsiveslides.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="js/inlineeditor.js"></script>
 	<script>
 		$(function () {
 		  $("#slider").responsiveSlides({
@@ -111,7 +113,7 @@
 			<div class="col-1-3">
 				<div class="wrap-col box">
 					<h2>Rocket League Stats</h2>
-					<p>At the moment we are busy to implement Rocket League stats</p>
+					<p class="editable">At the moment we are busy to implement Rocket League stats</p>
 					<div class="more"><a href="#">[...]</a></div>
 				</div>
 			</div>
@@ -196,9 +198,12 @@
 				<div class="wrap-col">
 					<div class="box">
 						<div class="heading"><h2 id="setname">Welcome Guest</h2></div>
-						<div id="loginbutton" class="content">
-							<button onclick="myName()">Login</button>
-						</div>
+						<div id="loginbutton" class="content"><div class="list">
+							<form name="myForm" onsubmit="return myName()" method="post"><center>
+								 <element class="loginform"><input type="text" name="name" placeholder="Username"></element>
+							</br></br> <element class="login"><button  type="submit" value="login"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</button></center></element>
+								</form>
+						</div></div>
 					</div>
 					<div class="box">
 						<div class="heading"><h2>Upcoming Features</h2></div>
