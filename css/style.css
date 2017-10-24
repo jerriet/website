@@ -22,7 +22,11 @@ input, textarea, select {margin:0; padding:0px;}
 /* -------------------------------------------- */
 /* ------------------Style--------------------- */
 html, body {width:100%; padding:0; margin:0;}
-body {background: #999999 url("../images/pattern29.png");color: #ffffff;font: 14px/25px Arial, Helvetica, sans-serif;}
+body {  background: url("../images/background.jpg") no-repeat fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; color: #ffffff;font: 14px/25px Arial, Helvetica, sans-serif;}
 
 a{color: #ffffff;text-decoration: none;}
 a:hover {color: #FF7400;; text-decoration: none;}
@@ -35,26 +39,26 @@ a.button:hover{}
 
 /* -------------------------------------------- */
 /* ------------------Header-------------------- */
-header {margin-bottom: 15px; margin-top: 50px;}
-header .wrap-header{height: 250px; background:#141414;}
+header {margin-bottom: 15px; margin-top: 15px; }
+header .wrap-header{height: 15px; background:rgba(20, 20, 20, 0.00);}
 
-header #logo { width:100%;position: absolute; top:40px; left: 20px;}
+header #logo { width:100%; position: absolute; top:40px; left: 20px;}
 
-header #search {position: absolute;top: 20px; right:20px; width: 218px;z-index: 15;}
+header #search {position: absolute;top: 60px; right:20px; width: 218px;z-index: 15;}
 header .button-search {	position: absolute;	right: 0px;	background: url('../images/button-search.png') center center no-repeat;	width: 28px; height: 35px;cursor: pointer;}
 header #search input{background: #FFF;	padding: 1px 33px 1px 5px;	width: 182px;	height: 32px;	border: 1px solid #CCCCCC;	-webkit-border-radius: 3px;	-moz-border-radius: 3px; -khtml-border-radius: 3px;	border-radius: 3px;}
 
 /* -------------------------------------------- */
 /* ------------------Navigation---------------- */
-nav {margin:15px 0px;}
-nav .wrap-nav{height: 80px; background: #FF7400;}
+nav {margin:0px 0px;}
+nav .wrap-nav{height: 75px; background: rgba(254, 254, 254, 0.76);}
 
 .menu ul {list-style: none;margin: 0;padding: 0;}
 .menu  ul li {position: relative;float: left;padding: 6px 5px 0px 5px; margin: 17px;}
-.menu  ul li:hover {background: rgb(254, 139, 42);}
-.menu  ul li a {font-size: 16px; line-height:20px;color:#ffffff;display: block;padding: 6px 10px;margin-bottom: 5px;z-index: 6;position: relative; text-transform:uppercase; }
+.menu  ul li:hover {background: rgba(0, 0, 0, 0.00);}
+.menu  ul li a {font-size: 16px; line-height:20px;color:#000000;display: block;padding: 6px 10px;margin-bottom: 5px;z-index: 6;position: relative; text-transform:uppercase; }
 .menu  ul li:hover a {}
-.menu .current{background: rgb(254, 139, 42);}
+.menu .current{background: rgba(254, 139, 42, 0.00);}
 
 .minimenu{display:none;}
 .minimenu{position: relative;margin: 0px;background:#FF7400; border: 1px solid #CCC;}
@@ -109,7 +113,7 @@ nav .wrap-nav{height: 80px; background: #FF7400;}
 /* -------------------------------------------- */
 /* ------------------Footer-------------------- */
 footer {margin-top: 15px;}
-.wrap-footer{background: #141414; border-top:5px solid #FF7400;}
+.wrap-footer{background: rgba(20, 20, 20, 0.00); border-top:5px solid #FF7400;}
 
 .block09 {padding: 10px;}
 .block09 .box{margin-bottom:20px; color: #959595;}
@@ -122,7 +126,7 @@ footer {margin-top: 15px;}
 .block09 .content .tag a:hover{color: #ffffff; background: rgb(254, 139, 42);}
 .block09 .content p{margin-bottom:10px; }
 
-.copyright{text-align:center; background:#040404; padding:10px 0px;}
+.copyright{text-align:center; background-color:transparent; padding:10px 0px;}
 .copyright a{text-decoration:underline;}
 
 
@@ -157,11 +161,6 @@ footer {margin-top: 15px;}
 	background: linear-gradient(top, #ddd, #aaa);	border: 2px solid #999;}
 
 .login button {width: 50%; background-color: #FF8900; color: white; padding: 14px 20px; font-size: 18px; margin: 8px 0; border: none; border-radius: 4px; cursor: pointer;}
+.logout button {width: 30%; background-color: #FF8900; color: white; padding: 7px 10px; font-size: 10px; margin: 4px 0; border: none; border-radius: 4px; cursor: pointer;}
 .loginform input[type=text], select {background-image: url('searchicon.png');width: 75%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;
-}
-
-.chevron-right:after {
-    content: '\f054';
-    font-family: 'FontAwesome';
-    padding-left: 5px;
 }
